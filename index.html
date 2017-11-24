@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<!-- Built while watching this tutorial: https://www.youtube.com/watch?v=gqOEoUR5RHg -->
+<html lang="en">
+    <head>
+        <title>Bootstrap Tutorial</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+        <style>
+            .jumbotron {
+                background-color: cornflowerblue;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <p>This is a container.</p>
+
+            <div class="page-header">
+                <h1>Bootstrap Tutorial</h1>
+            </div>
+            
+            <div class="jumbotron">
+                <p>Featured content goes here in the jumbotron.</p>
+
+                <p>
+                    <a href="#" class="btn btn-default btn-lg" role="button">Push Me</a>
+
+                    <button class="btn btn-danger" role="button">Danger</button>
+
+                    <input type="button" value="Info" class="btn btn-info" />
+
+                    <button class="btn btn-lg" disabled="disabled">Disabled Button</button>
+
+                    <a href="#" class="btn btn-default btn-lg disabled" role="button">Disabled Link</a>
+
+                    <div class="btn-group btn-group-lg" role="group">
+                        <button class="btn btn-default">Small</button>
+                        <button class="btn btn-default">Medium</button>
+                        <button class="btn btn-default">Large</button>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <h3>This is the first column</h3>
+                    <ul>
+                        <li>On large screens use 3 of the 12 columns for this column</li>
+                        <li>On medium screens use 3 of the 12 columns for this column</li>
+                        <li>On small screens use 6 of the 12 columns for this column</li>
+                        <li>On extra small screens use 12 of the 12 columns for this column</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <h3>This is the second column</h3>
+                    <ul>
+                        <li>On large screens use 3 of the 12 columns for this column</li>
+                        <li>On medium screens use 3 of the 12 columns for this column</li>
+                        <li>On small screens use 6 of the 12 columns for this column</li>
+                        <li>On extra small screens use 12 of the 12 columns for this column</li>
+                    </ul>
+                </div>
+
+                <div class="clearfix visible"></div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <h3>This is the third column</h3>
+                    <p>This column has less text which will break the flow on small screens. Add a clearfix to fix this.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <h3>This is the fourth column</h3>
+                    <p>The Lions are very frustrating! The Lions are very frustrating! The Lions are very frustrating! The Lions are very frustrating! The Lions are very frustrating! The Lions are very frustrating! The Lions are very frustrating!</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <h3>This is the fifth column</h3>
+                    <p>The Lions are very frustrating! The Lions are very frustrating! The Lions are very frustrating! The Lions are very frustrating! The Lions are very frustrating! The Lions are very frustrating! The Lions are very frustrating!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h4><a href="#col1Content" data-toggle="collapse">Column 1</a></h4>
+
+                    <div id="col1Content" class="collapse in">Column 1 text goes here. Notice how the number of columns used by each column in a particular size adds up to 12, the total available columns. Give more cells in smaller screens because the cells get smaller.</div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4><a href="#col2Content" data-toggle="collapse">Column 2</a></h4>
+
+                    <div id="col2Content" class="collapse">Column 2 text goes here. Notice how the number of columns used by each column in a particular size adds up to 12, the total available columns.</div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4><a href="#col3Content" data-toggle="collapse">Column 3</a></h4>
+
+                    <div id="col3Content" class="collapse">Column 3 text goes here. Notice how the number of columns used by each column in a particular size adds up to 12, the total available columns.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="well hidden-sm hidden-md hidden-lg">
+                Screen is extra small.
+            </div>
+            <div class="well hidden-xs hidden-md hidden-lg">
+                Screen is small.
+            </div>
+            <div class="well hidden-xs hidden-sm hidden-lg">
+                Screen is medium.
+            </div>
+            <div class="well hidden-xs hidden-sm hidden-md">
+                Screen is large.
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6">
+                    <p>This text is pushed to the right on medium or larger screens because of the col-offset that was applied.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <table class="table table-bordered table-striped table-hover">
+                <tr>
+                    <th class="text-center">Player Name</th>
+                    <th class="text-center">Team</th>
+                </tr>
+                <tr>
+                    <td>Matthew Stafford</td>
+                    <td>Detroit Lions</td>
+                </tr>
+                <tr>
+                    <td>Golden Tate</td>
+                    <td>Detroit Lions</td>
+                </tr>
+                <tr>
+                    <td>Aaron Rogers</td>
+                    <td>Green Bay Packers</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container">
+            <p>
+                <span class="glyphicon glyphicon-film" />
+            </p>
+        </div>
+
+        <div clas="container-fluid">
+            <p>This is a container-fluid.</p>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    </body>
+</html>
