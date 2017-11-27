@@ -15,7 +15,7 @@
             }
 
             .navbar {
-                padding-top: 35px;                
+                padding-top: 35px;
                 margin-bottom: 0px;
                 border-radius: 0px;
             }
@@ -25,7 +25,8 @@
             }
 
             .navbar-brand {
-                font-size: 32px;
+                font-size: 28px;
+                font-weight: 900;
             }
 
             .space-pv1 {
@@ -86,6 +87,18 @@
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
+
+            #marketing-panel {
+                float: left;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.25)
+            }
+
+            #marketing-panel h3 {
+                font-size: 20px;
+                font-weight: bold;
+                padding-right: 50px;
+            }
         </style>
     </head>
 
@@ -117,8 +130,13 @@
         </nav>
 
         <div id="search-header" class="container-fluid">
+            <div id="marketing-panel" class="container-fluid">
+                <h3>Super Awesome Marketing</h3>
+                <p>I mean, really clever text.</p>
+                <p>This stuff sells itself.</p>
+            </div>
             <div class="container text-center">
-                <h1 id="search-title">Property Chain</h2>
+                <h1 id="search-title">Property Chain</h1>
                 <input class="search-box" type="text" />
             </div>
         </div>
